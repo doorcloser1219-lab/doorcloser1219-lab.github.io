@@ -1,0 +1,100 @@
+/* 只作用于「滚动后」的实色导航栏（.top-nav-collapse）
+   顶部透明态（透出纯白背景）一律不碰，留给默认行为。 */
+.top-nav-collapse {
+  background-color: #F4F9FE !important;
+  box-shadow: 0 1px 4px rgba(58, 110, 165, .12) !important;
+}
+.top-nav-collapse .navbar-brand,
+.top-nav-collapse .nav-item > .nav-link,
+.top-nav-collapse .nav-link {
+  color: #3A6EA5 !important;
+}
+.top-nav-collapse .navbar-toggler .animated-icon span {
+  background-color: #3A6EA5 !important;
+}
+.top-nav-collapse .dropdown-menu {
+  background-color: #F4F9FE !important;
+}
+.top-nav-collapse .dropdown-item {
+  color: #3A6EA5 !important;
+}
+.top-nav-collapse .dropdown-item:active,
+.top-nav-collapse .dropdown-item:hover {
+  background-color: #EAF3FB !important;
+}
+
+/* ===== 文章分享栏 ===== */
+.post-share {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 16px 0 4px;
+  font-size: 14px;
+}
+.post-share-label {
+  color: #3A6EA5;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.post-share-btn {
+  border: 1px solid #CFE1F3;
+  background: #fff;
+  color: #3A6EA5;
+  border-radius: 999px;
+  padding: 4px 14px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background .2s, border-color .2s, color .2s;
+}
+.post-share-btn:hover {
+  background: #EAF3FB;
+  border-color: #3A6EA5;
+}
+/* 微信二维码弹窗 */
+.post-share-qr {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.post-share-qr-mask {
+  position: absolute;
+  inset: 0;
+  background: rgba(31, 49, 68, .45);
+}
+.post-share-qr-box {
+  position: relative;
+  background: #fff;
+  border-radius: 14px;
+  padding: 22px 26px;
+  text-align: center;
+  box-shadow: 0 10px 36px rgba(58, 110, 165, .28);
+}
+.post-share-qr-box img {
+  width: 220px;
+  height: 220px;
+  display: block;
+  margin: 0 auto;
+}
+.post-share-qr-box p {
+  color: #3A6EA5;
+  font-size: 13px;
+  margin: 14px 0 12px;
+}
+.post-share-qr-box button {
+  border: none;
+  background: #3A6EA5;
+  color: #fff;
+  border-radius: 8px;
+  padding: 6px 20px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background .2s;
+}
+.post-share-qr-box button:hover {
+  background: #2f5d8c;
+}
+
